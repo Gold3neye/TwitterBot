@@ -20,7 +20,7 @@ client.update('Mon premier tweet en Ruby !')
 
 def journalists
   client = login_twitter
-  client.update("#{journalists_list_sample}"), result_type: "recent").take(3).collect do |tweet|
+  client.update("#{journalists_list_sample}", result_type: "recent").take(3).collect do |tweet|
   end
 end
 
